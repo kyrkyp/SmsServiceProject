@@ -31,14 +31,6 @@ This project implements an SMS sending service using a .NET Core Web API. The se
    ```bash
     CREATE DATABASE SmsServiceDb
 
-## Usage
-Send a POST request to /api/sms with the following JSON payload:
-   ```bash
-   {
-  "phoneNumber": "+[CountryCode][PhoneNumber]",
-  "message": "Your message here"
-}
-
 ## Architecture
 This project follows Clean Architecture principles with a focus on separation of concerns and modularity.
 
@@ -47,3 +39,11 @@ This project follows Clean Architecture principles with a focus on separation of
 3. Repositories: Encapsulate data access and persistence logic.
 4. Models: Represent data entities and DTOs.
 5. Vendor Strategies: Implement vendor-specific SMS sending logic.
+
+## Usage
+Send a POST request to /api/sms with the following JSON payload:
+   ```bash
+      {
+     "phoneNumber": "+[CountryCode][PhoneNumber]",
+     "message": "Your message here"
+   }
