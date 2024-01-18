@@ -27,5 +27,15 @@ This project implements an SMS sending service using a .NET Core Web API. The se
    ```bash
    git clone [repository URL]
    
-2. In the Sql Server run the following command
+2. In the Sql Server run the following command :
+   ```bash
     CREATE DATABASE SmsServiceDb
+
+## Usage
+Send a POST request to /api/sms with the following JSON payload:
+   ```bash
+   {
+  "phoneNumber": "+[CountryCode][PhoneNumber]",
+  "message": "Your message here"
+}
+
