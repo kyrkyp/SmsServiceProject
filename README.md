@@ -39,3 +39,11 @@ Send a POST request to /api/sms with the following JSON payload:
   "message": "Your message here"
 }
 
+## Architecture
+This project follows Clean Architecture principles with a focus on separation of concerns and modularity.
+
+1. Controllers: Handle incoming HTTP requests and responses.
+2. Services: Contain business logic.
+3. Repositories: Encapsulate data access and persistence logic.
+4. Models: Represent data entities and DTOs.
+5. Vendor Strategies: Implement vendor-specific SMS sending logic.
